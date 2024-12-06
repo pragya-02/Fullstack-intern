@@ -1,215 +1,149 @@
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header Section */
+  .hero-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 40px;
+    background-color: #fff; */
+  }
+  
+  
+  .hero-header .hero-logo img {
+    height: 30px;
+  }
+  
+  .hero-header .hero-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .hero-header .hero-nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+  }
+  
+  .hero-header .hero-signup {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  .hero-hero {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    margin: 20px;
+    
+  }
+  
+  .hero-hero-text {
+    max-width: 50%;
+  }
+  
+  .hero-hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45.hero-6px;
+    font-weight: 900;
+    line-height: 57px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .hero-hero-text .hero-highlight {
+    background: #EBD96B;
+    display: inline-block;
+    padding: 5px;
+    
+  }
+
+    .hero-hero-text .hero-highlight1 {
+        background: #FFFFFF;     
+        display: inline-block;
+        padding: 5px;
+        
+    }
+
+  
+  .hero-hero-text p {
+    margin-top: 20px;
+    font-size: 1.hero-2rem;
+    color: #555;
+  }
+  
+  .hero-hero-text .hero-cta {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero-hero-image img {
+    width: 427.hero-55px;
+    height: 358.hero-61px;
+    top: 101px;
+    left: 402px;
+    gap: 0px;
+    opacity: 0px;
 }
 
-/* Site Header */
-.site-header {
-  background-color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  /* Hero Section ends*/
+  
+  
+  /* Brands Section */
 
-.nav-menu {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  
+  .hero-brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 912px;
+    height: 82px;
+    top: 519px;
+    gap: 0px;
+    opacity: 0px;
 
-.nav-menu li {
-  margin-right: 20px;
-}
-
-.nav-menu li a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.sign-up-button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Hero Section */
-.hero-section {
-  background-image: url('assets/hero-image.jpg');
-  background-size: cover;
-  background-position: center;
-  color: #000;
-  padding: 100px 20px;
-  text-align: center;
-  display: flex;
-}
-
-.hero-title {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.hero-description {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.happy-girl {
-  width: 891px;
-  height: 784px;
-}
-
-.shop-now-button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-}
-
-.shop-now-button {
-  display: inline-block;
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 10px;
-}
-
-
-/* New Arrivals Section */
-.new-arrivals-section {
-  padding: 60px 20px;
-  align-items: start;
-}
-
-.section-title {
-  font-size: 32px;
-  text-align: left;
-  margin-bottom: 40px;
-  padding-left: 10px;
-}
-
-.new-arrivals-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
-}
-
-.new-arrival-item {
-  text-align: center;
-}
-
-.new-arrival-image {
-  object-fit: unset;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  width: 484px;
-  height: 704px;
-}
-
-.new-arrival-title {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.new-arrival-link {
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Payday Sale Section */
-/* .payday-sale-section {
-  background-color: #f8f8f8;
-  padding: 60px 20px;
-}
-
-.payday-sale-content {
-  display: flex;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.payday-sale-image {
-  width: 50%;
-  max-height: 500px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.payday-sale-text {
-  width: 50%;
-  padding-left: 40px;
-}
-
-.payday-sale-title {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.payday-sale-description {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.payday-sale-dates {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.payday-sale-terms {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.payday-sale-button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-} */
-
-/* Brand Logos */
-.brand-logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 0;
-  background-color: #EBD96B;
-  /* width: 86.47px;
-  height: 57px; */
-}
-
-.brand-logo {
-  max-width: 100px;
-  margin: 0 20px;
-}
-
-/* Footer */
-.site-footer {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
+    align-items: center;
+    background: #EBD96B;
+    
+    padding: 20px;
+    margin: 20px 0;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 749.hero-2px;
+    height: 33.hero-57px;
+    position: absolute;
+    top: 544.hero-5px;
+    left: 81.hero-23px;
+    gap: 57.hero-47px; */
+  }
+  
+  .hero-brand-logo {
+    max-width: 100%;
+    height: auto;
+  }
+ 
