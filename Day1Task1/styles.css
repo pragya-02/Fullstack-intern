@@ -494,7 +494,7 @@ button {
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .details h1 {
         font-size: 28px; 
     }
@@ -527,8 +527,8 @@ button {
 .young {
     display: flex;
     flex-direction: column;
-    
     margin-bottom: 55px; 
+    overflow: hidden;
 }
 
 
@@ -579,12 +579,14 @@ button {
     align-items: center;
     padding: 0px 80px;
     
+    
 }
 
 .download-app {
     display: flex;
     flex-direction: column;
     max-width: 35%;
+    
 }
 
 .download-app h1 {
@@ -592,6 +594,7 @@ button {
     text-transform: uppercase;
     font-weight: 900;
     margin-bottom: 11px;
+    
 }
 
 .download-app p {
@@ -610,11 +613,55 @@ button {
     max-height: 100%;
 }
 
+/* responsive download section */
+@media (max-width: 768px) {
+    .download-section {
+        padding: 0px 40px;
+        justify-content: center;
+    }
+
+
+    .download-app h1 {
+        font-size: 22px;
+    }
+
+    .download-app p {
+        font-size: 10px;
+    }
+
+    .app {
+        width: 200px;
+    }
+
+    .mobile-app {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-section {
+        padding: 0px 20px;
+    }
+
+    .download-app h1 {
+        font-size: 18px;
+    }
+
+    .download-app p {
+        font-size: 8px;
+    }
+
+    .app {
+        width: 150px;
+    }
+}
+
 /* email section */
 
 .email{
     background-color: #E5C643;
     margin-top: 55px;
+    color: #FFFFFF;
 }
 
 .email .promo {
@@ -640,16 +687,18 @@ button {
 
 .email-container {
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
     align-items: center;
-    border-radius: 4px;
-    margin-left:180px;
-    margin-right: 180px;
-    overflow: hidden;
+    border-radius: 10px;
+    padding: 0.5%;
+    background-color: #FFFFFF;
+   
   }
 
 .email-input {
     border: none;
-    padding: 11px;
     flex: 1;
 }
   
@@ -660,7 +709,55 @@ button {
 .send-button {
     padding: 10px 20px;
     font-size: 12px;
+    border-radius: 10px;
 
+}
+
+/* responsive email section */
+@media (max-width: 768px) {
+    .email .promo {
+        padding: 30px 60px;
+    }
+
+    .promo h1 {
+        font-size: 22px;
+    }
+
+    .promo p {
+        font-size: 14px;
+    }
+
+    .email-container {
+        max-width: 250px;
+    }
+
+    .send-button {
+        padding: 8px 16px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .email .promo {
+        padding: 20px 30px;
+    }
+
+    .promo h1 {
+        font-size: 18px;
+    }
+
+    .promo p {
+        font-size: 12px;
+    }
+
+    .email-container {
+        max-width: 200px;
+    }
+
+    .send-button {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
 }
 
 /* footer section */
@@ -750,3 +847,17 @@ button {
   .link-section ul li a:hover {
     text-decoration: underline;
   }
+
+/* responsive footer section */
+@media screen and (max-width: 600px) {
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+}
