@@ -73,8 +73,8 @@ button {
 
 }
 
-/* header responsive */
-@media screen and (max-width: 600px) {
+/* responsive header */
+@media screen and (max-width: 768px) {
     .hamburger {
         display: block;
     }
@@ -98,6 +98,8 @@ button {
       }
 }
 
+
+
 /* hero section */
 
 .hero-section {
@@ -110,6 +112,7 @@ button {
     width: 100%;
     margin-top: 24.9px;
     padding: 23px 48px;
+    flex-wrap: wrap;
     
 }
 
@@ -186,6 +189,103 @@ button {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+}
+
+.slogan h1 {
+    font-size: 35px;
+}
+
+.slogan p {
+    display: none;
+}
+
+.slogan button {
+    width: 100px;
+    height: 35px;
+    font-size: 13px;
+}
+
+.leftside-model {
+    padding-top: 20px;
+    padding-left: 0;
+}
+/* responsive hero-section */
+
+@media (max-width: 768px) {
+    .slogan h1 {
+        font-size: 35px;
+    }
+
+    .slogan p {
+        display: none;
+    }
+
+    .slogan button {
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
+    }
+
+    .leftside-model {
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    .slogan h1 .highlight1 {
+        margin-left: -8px;
+        display: inline-block; /* Ensure the padding is applied correctly */
+        width: 120px; /* Set the fixed width */
+        padding-left: 8px ;
+        background-color: #FFFFFF;
+        transform: rotate(-2deg);
+    
+        
+      }
+      .slogan h1 .highlight2 {
+        margin-left: -9px;
+        display: inline-block; /* Ensure the padding is applied correctly */
+        width: 150px; /* Set the fixed width */
+        padding-left: 9px ;
+        background-color: #EBD96B;
+        transform: rotate(-2deg);
+    
+        
+      }
+}
+@media (max-width: 480px) {
+    .slogan h1 {
+        font-size: 28px;
+    }
+
+    .slogan p {
+        font-size: 12px;
+    }
+
+    .slogan button {
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .slogan h1 .highlight1 {
+        margin-left: -10px;
+        display: inline-block; /* Ensure the padding is applied correctly */
+        width: 200px; /* Set the fixed width */
+        padding-left: 10px ;
+        background-color: #FFFFFF;
+        transform: rotate(-2deg);
+    
+        
+      }
+      .slogan h1 .highlight2 {
+        margin-left: -13px;
+        display: inline-block; /* Ensure the padding is applied correctly */
+        width: 245px; /* Set the fixed width */
+        padding-left: 13px ;
+        background-color: #EBD96B;
+        transform: rotate(-2deg);
+    
+        
+      }
 }
 
 /* brand section */
