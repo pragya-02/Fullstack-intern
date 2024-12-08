@@ -286,9 +286,11 @@ button {
 
 .arrival {
     text-decoration: none;
-    padding-left: 48px;
-    padding-right: 76px;
-    margin-top: 36px;
+    margin-top: 3%;
+    width: 100%;
+    padding-left: 3.5%;
+    padding-right: 6%;
+    object-fit: cover;
 
 }
 
@@ -315,12 +317,18 @@ button {
 }
 
 .arrival img {
-    height: 335px;
     margin-bottom: 14px;
+    object-fit: cover;
+
 }
 .arrival .arrival-items {
-    display: flex;
-    gap: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-x: scroll;
+  scrollbar-width: none;
+    
 }
 
 .arrival-items .arrival-1 {
@@ -338,6 +346,38 @@ button {
 
 .arrow i {
     color: #7F7F7F;
+}
+
+/* responsive arrival */
+
+@media (max-width: 768px) {
+
+    .arrival h1 {
+        font-size: 20px;
+    }
+
+    .arrival p {
+        font-size: 10px;
+    }
+
+    .arrival h2 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .arrival h1 {
+        font-size: 16px;
+    }
+
+    .arrival p {
+        font-size: 9px;
+    }
+
+    .arrival h2 {
+        font-size: 12px;
+    }
 }
 
 /* payday section */
