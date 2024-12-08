@@ -33,15 +33,14 @@ button {
 .navbar {
     display: flex;
     width: 100%;
-    height: 30px;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     /* gap: 40px; */
 }
 
-.nav-logo {
-    display: flex;
-    align-items: center;
+.nav-logo img {
+    width: 180px;
 
 }
 
@@ -55,15 +54,16 @@ button {
 
 .nav-items a {
     color: #242323;
-    font-size: 10.45px;
+    font-size: 15.45px;
 }
 
 .nav-items button {
 
-    width: 70px;
-    height: 30px;
-    border-radius: 3px;
-    font-size: 11.4px;
+    width: 85px;
+    height: 35px;
+    border-radius: 6px;
+    font-size: 16.4px;
+    font-weight: 600;
 }
 
 .hamburger {
@@ -108,11 +108,11 @@ button {
     justify-content: space-between;
     align-items: center;
     border-radius: 25px;
-    height: 404.7px;
-    width: 100%;
-    margin-top: 24.9px;
-    padding: 23px 48px;
-    flex-wrap: wrap;
+    /* height: 404.7px;
+    width: 100%; */
+    margin: 2% 3.5% 0 3.5%;
+    padding: 2% 3.5%;
+    flex-wrap: wrap
     
 }
 
@@ -124,6 +124,8 @@ button {
     margin-top: 30px;
     width: 32%;
     gap: 15px;
+    flex: 1 1 32%;
+    
 }
 .slogan h1{
     font-size: 45px;
@@ -180,35 +182,15 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 68px 0 0 81px;
+  }
+  
+  .leftside-model img {
+    width: 100%;
     height: 100%;
-    padding-top: 68px;
-    padding-left: 81px;
-}
-
-.leftside-model img {
-    max-width: 100%;
-    max-height: 100%;
     object-fit: cover;
-}
+  }
 
-.slogan h1 {
-    font-size: 35px;
-}
-
-.slogan p {
-    display: none;
-}
-
-.slogan button {
-    width: 100px;
-    height: 35px;
-    font-size: 13px;
-}
-
-.leftside-model {
-    padding-top: 20px;
-    padding-left: 0;
-}
 /* responsive hero-section */
 
 @media (max-width: 768px) {
@@ -232,21 +214,17 @@ button {
     }
     .slogan h1 .highlight1 {
         margin-left: -8px;
-        display: inline-block; /* Ensure the padding is applied correctly */
-        width: 120px; /* Set the fixed width */
+        width: 150px;
         padding-left: 8px ;
-        background-color: #FFFFFF;
-        transform: rotate(-2deg);
+ 
     
         
       }
       .slogan h1 .highlight2 {
         margin-left: -9px;
-        display: inline-block; /* Ensure the padding is applied correctly */
-        width: 150px; /* Set the fixed width */
+        width: 200px;
         padding-left: 9px ;
-        background-color: #EBD96B;
-        transform: rotate(-2deg);
+      
     
         
       }
@@ -267,37 +245,36 @@ button {
     }
 
     .slogan h1 .highlight1 {
-        margin-left: -10px;
-        display: inline-block; /* Ensure the padding is applied correctly */
-        width: 200px; /* Set the fixed width */
-        padding-left: 10px ;
-        background-color: #FFFFFF;
-        transform: rotate(-2deg);
+        margin-left: -5px; 
+        width: 90px; 
+        padding-left: 5px ;
+   
     
         
-      }
-      .slogan h1 .highlight2 {
-        margin-left: -13px;
-        display: inline-block; /* Ensure the padding is applied correctly */
-        width: 245px; /* Set the fixed width */
-        padding-left: 13px ;
-        background-color: #EBD96B;
-        transform: rotate(-2deg);
+    }
+
+    .slogan h1 .highlight2 {
+        margin-left: -7px;
+        display: inline-block;
+        width: 125px; 
+        padding-left: 7px ;
+
     
         
-      }
+    }
 }
 
 /* brand section */
 
 .brand {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #EBD96B;
     margin-top: 36px;
     gap: 57.4px;
     height: 82px;
+    overflow: hidden;
     
 }
 
