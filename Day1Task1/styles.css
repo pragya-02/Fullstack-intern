@@ -297,13 +297,13 @@ button {
 .arrival h1 {
 
     margin-bottom: 50px;
-    font-size: 22.8px;
+    font-size: 30px;
     text-transform: uppercase; 
     font-weight: 900; 
 }
 
 .arrival p {
-    font-size: 11.4px;
+    font-size: 14px;
     color: #7F7F7F;
     font-weight: 500;
 }
@@ -311,7 +311,7 @@ button {
 
 
 .arrival h2 {
-    font-size: 15.2px;
+    font-size: 17px;
     font-weight: 500;
     color: #191919;
 }
@@ -535,7 +535,7 @@ button {
 
 .young h1{
     padding-left: 50px;
-    font-size: 26px;
+    font-size: 30px;
     text-transform: capitalize;
     font-weight: 900;
     margin-bottom: 28px;
@@ -593,7 +593,7 @@ button {
 }
 
 .download-app h1 {
-    font-size: 26px;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: 900;
     margin-bottom: 11px;
@@ -601,7 +601,7 @@ button {
 }
 
 .download-app p {
-    font-size: 12px;
+    font-size: 17x;
     font-weight: 500;
     margin-bottom: 17px;
 }
@@ -625,11 +625,11 @@ button {
 
 
     .download-app h1 {
-        font-size: 22px;
+        font-size: 27px;
     }
 
     .download-app p {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .app {
@@ -647,11 +647,11 @@ button {
     }
 
     .download-app h1 {
-        font-size: 18px;
+        font-size: 23px;
     }
 
     .download-app p {
-        font-size: 8px;
+        font-size: 13px;
     }
 
     .app {
