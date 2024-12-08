@@ -546,6 +546,7 @@ button {
     padding-left: 80px;
     align-items: center;
     gap: 50px;
+    justify-content: space-around;
 }
 
 .young-text h2 {
@@ -564,6 +565,7 @@ button {
     justify-content: space-between;
     align-items: center; 
     padding: 0 10px;
+
 }
 
 .young-text i{
@@ -585,7 +587,8 @@ button {
 .download-app {
     display: flex;
     flex-direction: column;
-    max-width: 35%;
+    align-items: center;
+    /* max-width: 35%; */
     
 }
 
