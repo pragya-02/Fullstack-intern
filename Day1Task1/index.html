@@ -31,13 +31,15 @@
         <div class="nav-logo">
           <img src="assets/logo_fashion.svg" alt="logo" />
         </div>
-        <div class="nav-items">
+        <div class="nav-items nav-menu">
           <a href="#">Catalogue</a>
           <a href="#">Fashion</a>
           <a href="#">Favourite</a>
           <a href="#">Lifestyle</a>
           <button>signup</button>
         </div>
+        <!-- hamburger menu -->
+        <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i> </a>
       </div>
     </header>
     <!-- hero section -->
@@ -245,4 +247,12 @@
       </div>
     </footer>
   </body>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+    });
+  </script>
 </html>
