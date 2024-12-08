@@ -387,8 +387,12 @@ button {
     align-items: center;
     justify-content: space-between;
     background-color: #E0C340;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    /* flex-wrap: wrap; */
+    width: 100%;
+
     
 }
 
@@ -402,7 +406,8 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 100px;
+    padding-right: 8%;
+    width: 58%;
 
 
 }
@@ -456,10 +461,65 @@ button {
     height: 50px;
     border-radius: 4.4px;
     font-size: 14px;
-   
     font-weight: 600;
     
 
+}
+/* responsive payday section */
+@media (max-width: 768px) {
+    .details h1 {
+        font-size: 41px;
+    }
+
+    .details .script {
+        font-size: 10px;
+    }
+
+    .details .date {
+        font-size: 11px; 
+    }
+
+    .details .conditions {
+        font-size: 10px; 
+    }
+
+    .details .payday-button {
+        width: 110px; 
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .details .highlight1 {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .details h1 {
+        font-size: 28px; 
+    }
+
+    .details .script {
+        font-size: 10px;
+    }
+
+    .details .date {
+        font-size: 10px; 
+    }
+
+    .details .conditions {
+        font-size: 9px;
+    }
+
+    .details .payday-button {
+        width: 100px; 
+        height: 35px;
+        font-size: 10px;
+    }
+
+    .details .highlight1 {
+        padding-right: 7px;
+    }
 }
 
 /* young section */
