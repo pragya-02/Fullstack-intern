@@ -527,8 +527,8 @@ button {
     align-items: center;
     justify-content: space-between;
     background-color: #E0C340;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     /* flex-wrap: wrap; */
     width: 100%;
 
@@ -539,14 +539,15 @@ button {
     display: flex;
     height: 100%;
     width: 50%;
-    margin-top: 22px;
+    margin-top: 4.5%;
 }
 
 .payday .details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 8%;
+    margin-right: 10.37%;
+    margin-left: 7.24%;
     width: 58%;
 
 
@@ -563,12 +564,12 @@ button {
     display: inline-block; /* Ensure the padding is applied correctly */
     background-color: #FFFFFF; 
     transform: rotate(-2deg);
-    padding-right: 20px;
+    padding-right: 2.65%;
 
 }
 
 .details .text {
-    padding-left:15px;
+    padding-left:2%;
     text-align: left;
     align-self: flex-start;
 }
@@ -576,14 +577,14 @@ button {
 .details .script {
     font-size: 36.04px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
     
 }
 
 .details .date {
     font-size: 36.04px;
     font-weight: 700;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 
   
 }
@@ -591,7 +592,7 @@ button {
 .details .conditions {
     font-size: 36.04px;
     font-weight: 400;
-    margin-bottom: 15px;
+    margin-bottom: 7%;
     
 }
 
@@ -606,75 +607,129 @@ button {
 
 }
 /* responsive payday section */
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
     .details h1 {
-        font-size: 75px;
-        margin-bottom: 48px;
+        font-size: 83px;
     }
 
     .details .script {
-        font-size: 24px;
-        margin-bottom: 45px;
+        font-size: 27px;
+        
     }
 
     .details .date {
-        font-size: 24px;
+        font-size: 27px;
     }
 
     .details .conditions {
-        font-size: 24px;
-        margin-bottom: 46px;
+        font-size: 27px;
+       
     }
 
     .details .payday-button {
-        width: 200px;
-        height: 70px;
-        font-size: 20px;
+        width: 199px;
+        height: 72px;
+        font-size: 21px;
+        border-radius: 6.1px;
     }
 
-    .details .highlight1 {
+    /* .details .highlight1 {
         padding-right: 15px;
-    }
+    } */
 }
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 1200px) {
     .details h1 {
-        font-size: 41px;
+        font-size: 69px;
     }
 
     .details .script {
-        font-size: 10px;
+        font-size: 22.5px;
     }
 
     .details .date {
-        font-size: 11px; 
+        font-size: 22.5px; 
     }
 
     .details .conditions {
-        font-size: 10px; 
+        font-size: 22.5px; 
     }
 
     .details .payday-button {
-        width: 110px; 
-        height: 35px;
-        font-size: 10px;
+        width: 137px; 
+        height: 47px;
+        font-size: 17.5px;
+        border-radius: 5px;
     }
 
-    .details .highlight1 {
-        padding-right: 10px;
-    }
+
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 946px) {
     .details h1 {
-        font-size: 28px; 
+        font-size: 40px; 
     }
 
     .details .script {
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .details .date {
-        font-size: 10px; 
+        font-size: 18px; 
+    }
+
+    .details .conditions {
+        font-size: 18px;
+    }
+
+    .details .payday-button {
+        width: 130px; 
+        height: 50px;
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 670px) {
+    .details h1 {
+        font-size: 30px; 
+    }
+
+    .details .script {
+        font-size: 12px;
+    }
+
+    .details .date {
+        font-size: 12px; 
+    }
+
+    .details .conditions {
+        font-size: 12px;
+    }
+
+    .details .payday-button {
+        width: 90px; 
+        height: 30px;
+        font-size: 9px;
+    }
+
+
+}
+
+@media screen and (max-width: 490px) {
+    .details h1 {
+        font-size: 23px; 
+    }
+
+    .details .script {
+        font-size: 9px;
+    }
+
+    .details .date {
+        font-size: 9px; 
     }
 
     .details .conditions {
@@ -682,50 +737,56 @@ button {
     }
 
     .details .payday-button {
-        width: 100px; 
-        height: 35px;
-        font-size: 10px;
+        width: 58px; 
+        height: 19px;
+        font-size: 7px;
     }
 
-    .details .highlight1 {
-        padding-right: 7px;
-    }
+
 }
+
 
 /* young section */
 
 .young {
     display: flex;
     flex-direction: column;
-    margin-bottom: 55px; 
+    margin-bottom: 12%; 
     overflow: hidden;
+    margin-left: 5.2%;
 }
 
 
 
 .young h1{
-    padding-left: 50px;
-    font-size: 30px;
+    
+    font-size: 36px;
     text-transform: capitalize;
     font-weight: 900;
-    margin-bottom: 28px;
+    margin-bottom: 6.5%;
 }
 
 .young-items {
     display: flex;
-    padding-left: 80px;
     align-items: center;
-    gap: 50px;
-    justify-content: space-around;
+    /* gap: 50px; */
+    justify-content: space-between; 
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.young-1 img {
+    width: 625px;
+
 }
 
 .young-text h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
 }
 
 .young-text p {
-    font-size: 13px;
+    font-size: 18px;
     color: #7F7F7F;
     font-weight: 500;
 }
@@ -740,6 +801,40 @@ button {
 
 .young-text i{
     color: #7F7F7F;
+    font-size: 18px;
+
+}
+
+/* responsive young section */
+@media screen and (max-width: 1024px) {
+    .young h1 {
+        font-size: 28px;
+    }
+
+    .young-text h2 {
+        font-size: 17px;
+    }
+
+    .young-text p {
+        font-size: 12px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .young h1 {
+        font-size: 22px;
+    }
+
+    .young-text h2 {
+        font-size: 15px;
+    }
+
+    .young-text p {
+        font-size: 10px;
+    }
+
 
 }
 
@@ -749,7 +844,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 80px;
+    margin: 0 11.41%;
     
     
 }
@@ -763,7 +858,7 @@ button {
 }
 
 .download-app h1 {
-    font-size: 30px;
+    font-size: 36px;
     text-transform: uppercase;
     font-weight: 900;
     margin-bottom: 11px;
@@ -771,7 +866,7 @@ button {
 }
 
 .download-app p {
-    font-size: 17x;
+    font-size: 18x;
     font-weight: 500;
     margin-bottom: 17px;
 }
@@ -788,18 +883,14 @@ button {
 
 /* responsive download section */
 @media (max-width: 768px) {
-    .download-section {
-        padding: 0px 40px;
-        justify-content: center;
-    }
-
+    
 
     .download-app h1 {
-        font-size: 27px;
+        font-size: 25px;
     }
 
     .download-app p {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .app {
@@ -812,16 +903,13 @@ button {
 }
 
 @media (max-width: 480px) {
-    .download-section {
-        padding: 0px 20px;
-    }
-
+    
     .download-app h1 {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .download-app p {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .app {
@@ -846,14 +934,14 @@ button {
 }
 
 .promo h1 {
-    font-size: 26px;
+    font-size: 41px;
     text-transform: uppercase;
     font-weight: 900;
     margin-bottom: 7px;
 }
 
 .promo p {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 15px;
 }
@@ -873,6 +961,7 @@ button {
 .email-input {
     border: none;
     flex: 1;
+    padding: 0 10px;
 }
   
 .email-input::placeholder {
@@ -900,9 +989,9 @@ button {
         font-size: 14px;
     }
 
-    .email-container {
+    /* .email-container {
         max-width: 250px;
-    }
+    } */
 
     .send-button {
         padding: 8px 16px;
@@ -923,9 +1012,9 @@ button {
         font-size: 12px;
     }
 
-    .email-container {
-        max-width: 200px;
-    }
+    /* .email-container {
+        width: 100%;
+    } */
 
     .send-button {
         padding: 6px 12px;
@@ -938,13 +1027,15 @@ button {
 .footer {
     background-color:#000000;
     padding: 60px 50px;
-    font-family: "Roboto", serif !important;
+    
     font-weight: 400;
   }
   
   .footer-container {
     display: flex;
     justify-content: space-between;
+    margin: 0 5%;
+    
     
   }
   
@@ -956,15 +1047,16 @@ button {
   
   .footer-logo {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin-bottom: 22px;
     text-transform: uppercase;
+    font-family: "Roboto", serif !important;
   }
   
   .footer-description {
-    font-size: 12px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 12px;
     color: #8E8E8E;
   }
   
@@ -979,9 +1071,9 @@ button {
   
   .icon {
     /* display: inline-block; */
-    width: 30px;
-    height: 30px;
-    border-radius: 6px;
+    width: 39px;
+    height: 39px;
+    border-radius: 11.25px;
     background-color: #E5C643;
     display: flex;
     align-items: center;
@@ -994,14 +1086,15 @@ button {
   /* footer links section */
   .footer-links {
     display: flex;
-    gap: 30px;
+    gap: 88px;
 
   }
   
   .link-section h3 {
-    font-size: 12px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: #D9D9D9;
+    font-family: "Roboto", serif !important;
   }
   
   .link-section ul {
@@ -1016,8 +1109,9 @@ button {
   .link-section ul li a {
     color: #8E8E8E;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 400;
+    
   }
   
   .link-section ul li a:hover {
@@ -1025,7 +1119,7 @@ button {
   }
 
 /* responsive footer section */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .footer-container {
       display: flex;
       flex-direction: column;
@@ -1034,6 +1128,7 @@ button {
     .footer-links {
       display: flex;
       flex-direction: column;
-      margin-top: 20px;
+      margin-top: 56px;
+      gap: 22px;
     }
 }
