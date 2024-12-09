@@ -23,24 +23,21 @@ button {
     cursor: pointer;
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    padding: 23px 48px;
-    
-}
+/* header section */
 
-.navbar {
+.header {
+    padding: 0px 7.413%;
+    margin-top: 46px;
     display: flex;
     width: 100%;
-    height: 50px;
+    height: 62px;
     justify-content: space-between;
     align-items: center;
-    /* gap: 40px; */
+
 }
 
-.nav-logo img {
-    width: 180px;
+.nav-logo {
+    display: flex; 
 
 }
 
@@ -53,17 +50,20 @@ button {
 }
 
 .nav-items a {
+    
     color: #242323;
-    font-size: 15.45px;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .nav-items button {
 
-    width: 85px;
-    height: 35px;
-    border-radius: 6px;
-    font-size: 16.4px;
-    font-weight: 600;
+    width: 134px;
+    height: 62px;
+    border-radius: 7px;
+    font-size: 24px;
+    font-weight: 500;
+    border-width: 0px;
 }
 
 .hamburger {
@@ -74,9 +74,10 @@ button {
 }
 
 /* responsive header */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
     .hamburger {
         display: block;
+        color: #000000
     }
 
     .nav-menu {
@@ -93,6 +94,8 @@ button {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
       }
+
+
     .nav-menu.active {
         left: 0;
       }
@@ -106,13 +109,12 @@ button {
     display: flex;
     background-color: #F4F6F5;
     justify-content: space-between;
-    align-items: center;
-    border-radius: 25px;
+    border-radius: 59px;
     /* height: 404.7px;
     width: 100%; */
-    margin: 2% 3.5% 0 3.5%;
-    padding: 2% 3.5%;
-    flex-wrap: wrap
+    margin: 4.152% 7.413% 0 7.413%;
+    /* padding: 2% 3.5%; */
+    max-height: 852px;
     
 }
 
@@ -120,15 +122,15 @@ button {
 .slogan {
     display: flex;
     flex-direction: column;
-    margin-left: 56px;
-    margin-top: 30px;
-    width: 32%;
+    margin-left: 10.358%;
+    margin-top: 6.702%;
     gap: 15px;
-    flex: 1 1 32%;
+    flex: 0.4;
+    margin-bottom: 8.27%;
     
 }
 .slogan h1{
-    font-size: 45px;
+    font-size: 96px;
     font-weight: 900;
     color: #000000;
     text-transform: uppercase; 
@@ -140,7 +142,7 @@ button {
 .slogan h1 .highlight1 {
     margin-left: -10px;
     display: inline-block; /* Ensure the padding is applied correctly */
-    width: 200px; /* Set the fixed width */
+    width: 464.74px; /* Set the fixed width */
     padding-left: 10px ;
     background-color: #FFFFFF;
     transform: rotate(-2deg);
@@ -151,7 +153,7 @@ button {
   .slogan h1 .highlight2 {
     margin-left: -13px;
     display: inline-block; /* Ensure the padding is applied correctly */
-    width: 245px; /* Set the fixed width */
+    width: 496px; /* Set the fixed width */
     padding-left: 13px ;
     background-color: #EBD96B;
     transform: rotate(-2deg);
@@ -161,7 +163,8 @@ button {
 
 .slogan p {
 
-    font-size: 15.2px;
+    font-size: 32px;
+    font-weight: 400px;
     color: #191818;
     text-transform: capitalize;
 
@@ -169,31 +172,73 @@ button {
 }
 .slogan button {
 
-    width: 105px;
-    height: 39px;
-    border-radius: 4.75px;
-    font-size: 14.25px;
+    width: 221px;
+    height: 77px;
+    border-radius: 10px;
+    font-size: 30px;
     text-transform: capitalize;
     margin-left: 4px;
 }
 
 .leftside-model {
-    flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 68px 0 0 81px;
-  }
-  
-  .leftside-model img {
+    justify-content: end;
+    align-items: end;
+    
+
+}
+
+.leftside-model img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    height: 90%;
+   
+    
+}
 
 /* responsive hero-section */
+@media (max-width: 1400px) {
+
+    .hero-section {
+        border-radius: 50px;
+    }
+    .slogan h1 {
+        font-size: 75px;
+    }
+
+    .slogan p {
+        font-size: 20px;
+    }
+
+    .slogan button {
+        width: 207px;
+        height: 73px;
+        font-size: 28px;
+    }
+
+    leftside-model {
+        padding-top: 20px;
+        padding-left: 0; 
+    
+    }
+    
+    .slogan h1 .highlight1 {
+        margin-left: -9.375px;
+        width: 350px;
+        padding-left: 9.375px ;    
+    }
+      .slogan h1 .highlight2 {
+        margin-left: -12.18px;
+        width: 370px;
+        padding-left: 12.18px ;
+    }
+}
 
 @media (max-width: 768px) {
+
+    .hero-section {
+        border-radius: 45px;
+    }
+
     .slogan h1 {
         font-size: 35px;
     }
@@ -230,18 +275,23 @@ button {
       }
 }
 @media (max-width: 480px) {
+
+    .hero-section {
+        border-radius: 10px;
+    }
     .slogan h1 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .slogan p {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .slogan button {
-        width: 90px;
+        width: 70px;
         height: 30px;
-        font-size: 12px;
+        font-size: 10px;
+        border-radius: 4px;
     }
 
     .slogan h1 .highlight1 {
@@ -256,7 +306,7 @@ button {
     .slogan h1 .highlight2 {
         margin-left: -7px;
         display: inline-block;
-        width: 125px; 
+        width: 100px; 
         padding-left: 7px ;
 
     
@@ -271,39 +321,81 @@ button {
     justify-content: space-evenly;
     align-items: center;
     background-color: #EBD96B;
-    margin-top: 36px;
+    margin-top: 4.68%;
     gap: 57.4px;
-    height: 82px;
+    height: 186px;
+
+    padding: 0 13%;
     overflow: hidden;
+
     
 }
 
 .brand-logo {
-    height: 34px;
+    height: 57px;
+}
+
+/* responsive brand section */
+
+@media screen and (max-width: 1400px) {
+    .brand {
+        height: 140px;
+    }
+
+    .brand-logo {
+        height: 43px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brand {
+        height: 74.4px;
+    }
+
+    .brand-logo {
+        height: 23px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .brand {
+        height: 47px;
+    }
+
+    .brand-logo {
+        height: 15px;
+    }
 }
 
 /* Arrival section */
 
 .arrival {
     text-decoration: none;
-    margin-top: 3%;
-    width: 100%;
+    margin: 5.2% 0 0 7.8%;
+    /* width: 100%;
     padding-left: 3.5%;
-    padding-right: 6%;
-    object-fit: cover;
+    padding-right: 6%; */
+    /* object-fit: cover; */
 
 }
 
 .arrival h1 {
 
-    margin-bottom: 50px;
-    font-size: 30px;
+    margin-bottom: 9%;
+    font-size: 48px;
     text-transform: uppercase; 
     font-weight: 900; 
 }
 
+.arrival .responsive-h1{
+    font-size: 32px;
+    font-weight: 500;
+    color: #191919; 
+    display:none;
+}
+
 .arrival p {
-    font-size: 14px;
+    font-size: 24px;
     color: #7F7F7F;
     font-weight: 500;
 }
@@ -311,20 +403,22 @@ button {
 
 
 .arrival h2 {
-    font-size: 17px;
+    font-size: 32px;
     font-weight: 500;
     color: #191919;
 }
 
 .arrival img {
-    margin-bottom: 14px;
-    object-fit: cover;
+    margin-bottom: 8%;
+    height:704px;
+    width: 484px;
+    /* object-fit: cover; */
 
 }
 .arrival .arrival-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  gap:90px;
   align-items: center;
   overflow-x: scroll;
   scrollbar-width: none;
@@ -349,34 +443,80 @@ button {
 }
 
 /* responsive arrival */
+@media screen and (max-width: 1400px) {
 
-@media (max-width: 768px) {
-
+    .arrival .arrival-items {
+        gap: 65px;
+    }
+    .arrival img{
+        height: 513px;
+        width:352px;
+    }
     .arrival h1 {
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .arrival p {
-        font-size: 10px;
+        font-size: 17.5px;
     }
 
     .arrival h2 {
-        font-size: 14px;
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .arrival .arrival-items {
+        gap: 35px;
+    }
+    .arrival img{
+        height: 281px;
+        width: 193px;
+    }
+    .arrival h1 {
+        font-size: 19px;
+    }
+
+    .arrival p {
+        font-size: 9.6px;
+    }
+
+    .arrival h2 {
+        font-size: 13px;
     }
 }
 
-@media (max-width: 480px) {
-
+@media screen and (max-width: 480px) {
+    .arrival .arrival-items {
+        gap: 22px;
+    }
+    .arrival img{
+        height: 175px;
+        width: 120px;
+    }
     .arrival h1 {
-        font-size: 16px;
+        font-size: 12px;
     }
 
+
+
     .arrival p {
-        font-size: 9px;
+        font-size: 6px;
     }
 
     .arrival h2 {
-        font-size: 12px;
+        font-size: 8.21px;
+    }
+
+    .arrival .responsive-h1{
+        font-size: 8.21px;
+        display: flex;
+ 
+    }
+
+    .arrival .hide{
+        display:none;
     }
 }
 
@@ -389,7 +529,6 @@ button {
     background-color: #E0C340;
     margin-top: 2.5%;
     margin-bottom: 5%;
-    padding: 5%;
     /* flex-wrap: wrap; */
     width: 100%;
 
@@ -400,6 +539,7 @@ button {
     display: flex;
     height: 100%;
     width: 50%;
+    margin-top: 22px;
 }
 
 .payday .details {
@@ -413,7 +553,7 @@ button {
 }
 
 .details h1 {
-    font-size: 60px;
+    font-size: 111.61px;
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -434,14 +574,14 @@ button {
 }
 
 .details .script {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 36.04px;
+    font-weight: 500;
     margin-bottom: 15px;
     
 }
 
 .details .date {
-    font-size: 19px;
+    font-size: 36.04px;
     font-weight: 700;
     margin-bottom: 5px;
 
@@ -449,7 +589,7 @@ button {
 }
 
 .details .conditions {
-    font-size: 18px;
+    font-size: 36.04px;
     font-weight: 400;
     margin-bottom: 15px;
     
@@ -457,15 +597,45 @@ button {
 
 .details .payday-button {
 
-    width: 140px;
-    height: 50px;
-    border-radius: 4.4px;
-    font-size: 14px;
+    width: 265px;
+    height: 95px;
+    border-radius: 8.14px;
+    font-size: 27.9px;
     font-weight: 600;
     
 
 }
 /* responsive payday section */
+@media (max-width: 1400px) {
+    .details h1 {
+        font-size: 75px;
+        margin-bottom: 48px;
+    }
+
+    .details .script {
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+
+    .details .date {
+        font-size: 24px;
+    }
+
+    .details .conditions {
+        font-size: 24px;
+        margin-bottom: 46px;
+    }
+
+    .details .payday-button {
+        width: 200px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .details .highlight1 {
+        padding-right: 15px;
+    }
+}
 @media (max-width: 768px) {
     .details h1 {
         font-size: 41px;
@@ -804,6 +974,8 @@ button {
     gap: 10px;
 
   }
+
+  
   
   .icon {
     /* display: inline-block; */
@@ -814,6 +986,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #000000;
     
   }
   
