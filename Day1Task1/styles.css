@@ -52,16 +52,16 @@ button {
 .nav-items a {
     
     color: #242323;
-    font-size: 22px;
+    font-size: 16.5px;
     font-weight: 500;
 }
 
 .nav-items button {
 
-    width: 134px;
-    height: 62px;
-    border-radius: 7px;
-    font-size: 24px;
+    width: 100px;
+    height: 45px;
+    border-radius: 6px;
+    font-size: 18px;
     font-weight: 500;
     border-width: 0px;
 }
@@ -74,7 +74,7 @@ button {
 }
 
 /* responsive header */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1000px) {
     .hamburger {
         display: block;
         color: #000000
@@ -1131,4 +1131,35 @@ button {
       margin-top: 56px;
       gap: 22px;
     }
+
+    .link-section h3 {
+      font-size: 16px;
+    }
+
+    .link-section ul li a {
+      font-size: 16px;
+    }
+
+    .footer-left {
+      margin-bottom: 40px;
+    }
+
+    .social-icons {
+      gap: 20px;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 8.5px;
+    }
+
+    .footer-logo {
+      font-size: 25px;
+    }
+
+    .footer-description {
+      font-size: 16px;
+    }
+    
 }
