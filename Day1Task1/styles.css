@@ -528,7 +528,7 @@ button {
     justify-content: space-between;
     background-color: #E0C340;
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
     /* flex-wrap: wrap; */
     width: 100%;
 
@@ -751,9 +751,8 @@ button {
 .young {
     display: flex;
     flex-direction: column;
-    margin-bottom: 12%; 
     overflow: hidden;
-    margin-left: 5.2%;
+    margin: 0 7.8% 9% 7.8%;
 }
 
 
@@ -769,14 +768,14 @@ button {
 .young-items {
     display: flex;
     align-items: center;
-    /* gap: 50px; */
+    gap: 35px;
     justify-content: space-between; 
     overflow-x: scroll;
     scrollbar-width: none;
 }
 
 .young-1 img {
-    width: 625px;
+    width: 520px;
 
 }
 
@@ -807,6 +806,10 @@ button {
 
 /* responsive young section */
 @media screen and (max-width: 1024px) {
+    .young-1 img {
+        width: 432px;
+    }
+
     .young h1 {
         font-size: 28px;
     }
@@ -823,6 +826,10 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+    .young-1 img{
+        width: 350px;
+    }
+
     .young h1 {
         font-size: 22px;
     }
@@ -836,6 +843,25 @@ button {
     }
 
 
+}
+
+@media screen and (max-width: 480px) {
+    .young-1 img{
+        width: 250px;
+    }
+
+    .young h1 {
+        font-size: 16px;
+    }
+
+    .young-text h2 {
+        font-size: 10px;
+    }
+
+    .young-text p {
+        font-size: 7px;
+    }
+    
 }
 
 /* download section */
@@ -905,15 +931,15 @@ button {
 @media (max-width: 480px) {
     
     .download-app h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .download-app p {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .app {
-        width: 150px;
+        width: 200px;
     }
 }
 
